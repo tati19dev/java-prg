@@ -11,25 +11,26 @@ import java.util.Scanner;
  * @author Tatiana
  */
 public class PotenciaNum {
-    public static long potencia(int b,int exp){
-        if(exp == 0) {
+
+    public static long potencia(int b, int exp) {
+        if (exp == 0) {
             return 1;
         }
-        return b*potencia(b,exp-1);
+        return b * potencia(b, exp - 1);
     }
+
     public static void main(String[] args) {
-        Scanner lee =new Scanner(System.in);
-        int exp,b;
+        Scanner lee = new Scanner(System.in);
+        int exp, b;
         System.out.println("Ingrese el valor del exponente");
-        exp=lee.nextInt();
+        exp = lee.nextInt();
         System.out.println("Ingrese el valor de la base");
-        b=lee.nextInt();
+        b = lee.nextInt();
         System.out.println("La potencia de un muero es:");
-      
-             long Pt = potencia(b,exp);
-            System.out.print(Pt+" ");
-        
+
+        long Pt = potencia(b, exp);
+        System.out.print(Pt + " ");
+
         System.out.println(" ");
     }
 }
-
